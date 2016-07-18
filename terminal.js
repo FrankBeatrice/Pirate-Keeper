@@ -13,6 +13,7 @@ connection.connect(function(err) {
     };;
 });
 
+var colors = require("colors")
 var prompt = require('prompt');
 prompt.start();
 prompt.message = '';
@@ -21,31 +22,30 @@ prompt.message = '';
 ship = {
     welcome: function() {
         console.log("");
-        console.log("                 WELCOME TO THE BARRACKS OF PIRATES!!!!");
-        console.log("");
-        console.log("                 BE READY TO BUILD YOUR ARMY           ");
-        console.log("");
+        console.log("                 WELCOME TO THE BARRACKS OF PIRATES!!!!".red);
+        console.log("                 BE READY TO BUILD YOUR ARMY           ".rainbow);
         console.log("");
         console.log("");
         console.log("");
-        console.log("Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO");
-        console.log("Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO");
-        console.log("OboO      .OOo. .oOOOOOo.    OOOo.oOOOOOo..               OO");
-        console.log(" OOP.oOOOOOOOOOOO  POOOOOOOOOOOo.     OOOOOOOOOP OOOOOOOOOOOB");
-        console.log("     O OOOO       OOOOo OOOOOOOOOOO  .adOOOOOOOOO oOOO      OOOOo");
-        console.log(".OOOO              OOOOOOOOOOOOOOOOOOOOOOOOOO              OO");
-        console.log("OOOOO                 OOOOOOOOOOOOOOOOOOOOOOOOOO           oOO");
-        console.log("oOOOOOba.                .adOOOOOOOOOOba               .adOOOOo.");
-        console.log("oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO");
-        console.log("OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO      OOOOOOOOOOOOO.OOOOOOOOOOOOOO");
-        console.log("OOOO         YOoOOOOMOIONODOO    .     OOROAOPOEOOOoOY       OOO ");
-        console.log("  Y            OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?          : ");
-        console.log("   :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .");
-        console.log("   .            oOOP %OOOOOOOOoOOOOOOO?oOOOOO?OOOO OOo ");
-        console.log("       %o  OOOO %OOOO%%OOOOO OOOOOO OOO :");
-        console.log("             $    OOOO   OY    OOOO   o       ");
-        console.log("             .                  .     OP          : o     .");
-        console.log("             .                   . ");
+        console.log("");
+        console.log("Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO".rainbow);
+        console.log("Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO".rainbow);
+        console.log("OboO      .OOo. .oOOOOOo.    OOOo.oOOOOOo..               OO".rainbow);
+        console.log(" OOP.oOOOOOOOOOOO  POOOOOOOOOOOo.     OOOOOOOOOP OOOOOOOOOOOB".rainbow);
+        console.log("     O OOOO       OOOOo OOOOOOOOOOO  .adOOOOOOOOO oOOO      OOOOo".rainbow);
+        console.log(".OOOO              OOOOOOOOOOOOOOOOOOOOOOOOOO              OO".rainbow);
+        console.log("OOOOO                 OOOOOOOOOOOOOOOOOOOOOOOOOO           oOO".rainbow);
+        console.log("oOOOOOba.                .adOOOOOOOOOOba               .adOOOOo.".rainbow);
+        console.log("oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO".rainbow);
+        console.log("OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO      OOOOOOOOOOOOO.OOOOOOOOOOOOOO".rainbow);
+        console.log("OOOO         YOoOOOOMOIONODOO    .     OOROAOPOEOOOoOY       OOO ".rainbow);
+        console.log("  Y            OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?          : ".rainbow);
+        console.log("   :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .".rainbow);
+        console.log("   .            oOOP %OOOOOOOOoOOOOOOO?oOOOOO?OOOO OOo ".rainbow);
+        console.log("       %o  OOOO %OOOO%%OOOOO OOOOOO OOO :".rainbow);
+        console.log("             $    OOOO   OY    OOOO   o       ".rainbow);
+        console.log("             .                  .     OP          : o     .".rainbow);
+        console.log("             .                   . ".rainbow);
         //console.log("             . ");
     },
     menu: function() {
